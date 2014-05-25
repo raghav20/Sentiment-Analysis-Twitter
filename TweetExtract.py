@@ -6,7 +6,7 @@ def column_selector(table, column_key):
     return [row[column_key] for row in table]
 
 
-
+# File containing tweet information . 
 with open("Data/Captain America.csv","r") as csvfile:
     reader = csv.DictReader(csvfile, delimiter=",")
     table = [row for row in reader]

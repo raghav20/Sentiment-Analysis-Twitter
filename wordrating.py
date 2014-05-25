@@ -4,6 +4,7 @@ import Stemmer
 
 from nltk import PorterStemmer
 
+# Extract required Columns
 def col_selector(table, column_key):
     return [row["Word"]+","+row["V.Mean.Sum"]+","+row["V.SD.Sum"]+","+row["A.Mean.Sum"]+","+row["A.SD.Sum"]+","+row["D.Mean.Sum"]+","+row["D.SD.Sum"] for row in table]
 from nltk import PorterStemmer
